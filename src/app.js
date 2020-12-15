@@ -26,7 +26,7 @@ hbs.registerPartials(partialsPath)
 // Routing
 // app.get( path, callback )
 app.get("/", (req, res) => {
-    res.render("index");
+    res.sendFile("index.html");
 });
 
 app.post("/submited", async (req, res) => {
