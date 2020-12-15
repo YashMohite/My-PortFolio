@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <title>Join With Me</title>
+</head>
+
+<body>
+    <div id="homeid"></div>
+    {{>navbar}}
+    {{!-- hero section start --}}
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                    <div
+                        class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-start align-items-center flex-column mt-auto">
+                        <h1>My Name Is</h1>
+                        <h1>Yash Mohite</h1>
+                        <p class="align-items-center">I Am <span class="bold-style align-items-center">A Student</span>
+                            And <span class="bold-style align-items-center">A MernStack
+                                Developer</span> 😃</p>
+                        <a href="#aboutid"><button class="btn-style btn-primary" id="aboutid">More About Me</button></a>
+                    </div>
+                    {{!-- right side --}}
+                    <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+                        <figure>
+                            <img src="images/Home.svg" alt="herosection_img" style="width: 100%;">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- hero section ends --}}
+
+    {{!-- about section start --}}
+    {{>about}}
+    {{!-- about section ends --}}
+
+    {{!-- projects section start --}}
+    {{!-- {{>projects}} --}}
+    {{!-- projects section ends --}}
+
+    {{!-- contact section start --}}
+    {{>contact}}
+    {{!-- contact section ends --}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+
+</html>
